@@ -9,11 +9,13 @@
 </head>
 <body>
 
+  <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido</a>
+
   <!-- ENCABEZADO Y NAVEGACIÓN (RF-01) -->
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-warning" aria-label="Navegación principal">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center fw-bold" href="#inicio">
+        <a class="navbar-brand d-flex align-items-center fw-bold fs-6" href="#inicio">
           <img src="imagenes/logogamerfest.jpg" width="42" height="42" class="me-2 rounded" alt="Logotipo del Gamer Fest ESPE 2027">
           GAMER FEST <span class="text-info ms-1">ESPE 2027</span>
         </a>
@@ -35,7 +37,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="contenido">
 
     <!-- HERO: INVITACIÓN E INFORMACIÓN (RF-02) -->
     <section id="inicio" class="py-5">
@@ -59,8 +61,7 @@
             <a href="#inscripcion" class="btn btn-warning btn-lg fw-bold px-4">Inscríbete ahora</a>
           </div>
           <div class="col-12 col-lg-6">
-            <!-- Falta la imagen principal: guardar una en imagenes/ y cambiar esta ruta -->
-            <img src="imagenes/logogamerfest.jpg" class="img-fluid rounded-4 border border-warning" alt="Jugadores compitiendo en el torneo Gamer Fest ESPE 2027">
+            <img src="imagenes/logogamerfest.jpg" class="img-fluid d-block mx-auto rounded-4 border border-warning" alt="Logotipo del Gamer Fest ESPE 2027">
           </div>
         </div>
       </div>
@@ -74,9 +75,7 @@
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-6 col-lg-3">
             <article class="card shadow">
-              <div class="ratio ratio-4x3">
-                <img src="imagenes/shooter5v5.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría Shooter 5v5">
-              </div>
+              <img src="imagenes/shooter5v5.jpg" class="card-img-top img-fluid" alt="Arte de la categoría Shooter 5v5">
               <div class="card-body">
                 <p class="display-5 fw-bold text-warning mb-0">01</p>
                 <h3 class="h5 card-title">Shooter 5v5</h3>
@@ -87,9 +86,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3 mt-lg-5">
             <article class="card shadow">
-              <div class="ratio ratio-4x3">
-                <img src="imagenes/1v1.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría Peleas 1v1">
-              </div>
+              <img src="imagenes/1v1.jpg" class="card-img-top img-fluid" alt="Arte de la categoría Peleas 1v1">
               <div class="card-body">
                 <p class="display-5 fw-bold text-warning mb-0">02</p>
                 <h3 class="h5 card-title">Peleas 1v1</h3>
@@ -100,9 +97,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <article class="card shadow">
-              <div class="ratio ratio-4x3">
-                <img src="imagenes/moba.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría MOBA">
-              </div>
+              <img src="imagenes/moba.jpg" class="card-img-top img-fluid" alt="Arte de la categoría MOBA">
               <div class="card-body">
                 <p class="display-5 fw-bold text-warning mb-0">03</p>
                 <h3 class="h5 card-title">MOBA</h3>
@@ -113,9 +108,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3 mt-lg-5">
             <article class="card shadow">
-              <div class="ratio ratio-4x3">
-                <img src="imagenes/movil.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría Juegos móviles">
-              </div>
+              <img src="imagenes/movil.jpg" class="card-img-top img-fluid" alt="Arte de la categoría Juegos móviles">
               <div class="card-body">
                 <p class="display-5 fw-bold text-warning mb-0">04</p>
                 <h3 class="h5 card-title">Juegos móviles</h3>
@@ -128,39 +121,64 @@
       </div>
     </section>
 
-    <!-- PREMIOS (RF-03): en escritorio el orden visual es 2.º, 1.º, 3.º -->
+    <!-- PREMIOS (RF-03): en escritorio el podio se ordena 2.º, 1.º, 3.º; en móvil, 1.º, 2.º, 3.º -->
     <section id="premios" class="py-5">
       <div class="container py-lg-4">
         <h2 class="display-6 fw-bold text-uppercase text-center">Podio de premios</h2>
         <p class="text-body-secondary text-center mb-5">Premios propuestos con fines demostrativos.</p>
         <div class="row g-4 align-items-lg-end">
+
+          <!-- 1.er lugar -->
           <div class="col-12 col-lg-4 order-1 order-lg-2">
-            <article class="card bg-warning text-dark border-0 shadow-lg h-100">
-              <div class="card-body text-center py-lg-5">
-                <h3 class="h5 text-uppercase">Primer lugar</h3>
-                <p class="fs-3 fw-bold">Trofeo + $100 en tarjeta de regalo</p>
-                <p class="mb-0">Condición: equipo o jugador completo y presente en la final.</p>
+            <article class="text-center">
+              <div class="card border-warning shadow-lg rounded-bottom-0">
+                <img src="imagenes/tecladogamer.jpg" class="card-img-top img-fluid rounded-bottom-0" alt="Teclado gamer mecánico, premio del primer lugar">
+                <div class="card-body">
+                  <h3 class="h4 fw-bold">Teclado gamer mecánico</h3>
+                  <p class="text-body-secondary mb-0">Condición: equipo o jugador completo y presente en la final.</p>
+                </div>
+              </div>
+              <div class="bg-warning text-dark rounded-bottom-4 py-3 py-lg-5">
+                <p class="display-1 fw-bold mb-0">1</p>
+                <p class="text-uppercase fw-bold mb-0">Primer lugar</p>
               </div>
             </article>
           </div>
+
+          <!-- 2.º lugar -->
           <div class="col-12 col-lg-4 order-2 order-lg-1">
-            <article class="card border-info h-100">
-              <div class="card-body text-center">
-                <h3 class="h5 text-info text-uppercase">Segundo lugar</h3>
-                <p class="fs-4 fw-bold">Medalla + $50 en tarjeta de regalo</p>
-                <p class="text-body-secondary mb-0">Condición: haber jugado todas las rondas asignadas.</p>
+            <article class="text-center">
+              <div class="card border-info shadow rounded-bottom-0">
+                <img src="imagenes/audifonosgamer.jpg" class="card-img-top img-fluid rounded-bottom-0" alt="Audífonos gamer, premio del segundo lugar">
+                <div class="card-body">
+                  <h3 class="h5 fw-bold">Audífonos gamer</h3>
+                  <p class="text-body-secondary mb-0">Condición: haber jugado todas las rondas asignadas.</p>
+                </div>
+              </div>
+              <div class="bg-info text-dark rounded-bottom-4 py-3 py-lg-4">
+                <p class="display-3 fw-bold mb-0">2</p>
+                <p class="text-uppercase fw-bold mb-0">Segundo lugar</p>
               </div>
             </article>
           </div>
+
+          <!-- 3.er lugar -->
           <div class="col-12 col-lg-4 order-3">
-            <article class="card border-info h-100">
-              <div class="card-body text-center">
-                <h3 class="h5 text-info text-uppercase">Tercer lugar</h3>
-                <p class="fs-4 fw-bold">Medalla + kit de periféricos</p>
-                <p class="text-body-secondary mb-0">Condición: respetar las bases del torneo.</p>
+            <article class="text-center">
+              <div class="card border-secondary shadow rounded-bottom-0">
+                <img src="imagenes/mouse.jpg" class="card-img-top img-fluid rounded-bottom-0" alt="Mouse gamer, premio del tercer lugar">
+                <div class="card-body">
+                  <h3 class="h5 fw-bold">Mouse gamer</h3>
+                  <p class="text-body-secondary mb-0">Condición: respetar las bases del torneo.</p>
+                </div>
+              </div>
+              <div class="bg-secondary text-white rounded-bottom-4 py-3 py-lg-3">
+                <p class="display-5 fw-bold mb-0">3</p>
+                <p class="text-uppercase fw-bold mb-0">Tercer lugar</p>
               </div>
             </article>
           </div>
+
         </div>
       </div>
     </section>
@@ -174,9 +192,7 @@
           <div class="col-12 col-lg-4">
             <article class="card border-secondary h-100 text-center">
               <div class="card-body">
-                <div class="ratio ratio-16x9 mb-3">
-                  <img src="imagenes/pixelForge.jpg" class="w-100 h-100 object-fit-contain rounded" alt="Logotipo de PixelForge, auspiciante simulado">
-                </div>
+                <img src="imagenes/pixelForge.jpg" class="img-fluid d-block mx-auto rounded mb-3" alt="Logotipo de PixelForge, auspiciante simulado">
                 <h3 class="h5 mb-0">PixelForge <small class="text-body-secondary">(simulado)</small></h3>
               </div>
             </article>
@@ -184,9 +200,7 @@
           <div class="col-12 col-lg-4">
             <article class="card border-secondary h-100 text-center">
               <div class="card-body">
-                <div class="ratio ratio-16x9 mb-3">
-                  <img src="imagenes/novabyte.jpg" class="w-100 h-100 object-fit-contain rounded" alt="Logotipo de NovaByte, auspiciante simulado">
-                </div>
+                <img src="imagenes/novabyte.jpg" class="img-fluid d-block mx-auto rounded mb-3" alt="Logotipo de NovaByte, auspiciante simulado">
                 <h3 class="h5 mb-0">NovaByte <small class="text-body-secondary">(simulado)</small></h3>
               </div>
             </article>
@@ -194,9 +208,7 @@
           <div class="col-12 col-lg-4">
             <article class="card border-secondary h-100 text-center">
               <div class="card-body">
-                <div class="ratio ratio-16x9 mb-3">
-                  <img src="imagenes/arcadelabs.jpg" class="w-100 h-100 object-fit-contain rounded" alt="Logotipo de Arcade Labs, auspiciante simulado">
-                </div>
+                <img src="imagenes/arcadelabs.jpg" class="img-fluid d-block mx-auto rounded mb-3" alt="Logotipo de Arcade Labs, auspiciante simulado">
                 <h3 class="h5 mb-0">Arcade Labs <small class="text-body-secondary">(simulado)</small></h3>
               </div>
             </article>
@@ -232,58 +244,15 @@
           <div class="col-12 col-lg-4">
             <span class="badge text-bg-warning mb-3">Último paso</span>
             <h2 class="display-6 fw-bold text-uppercase">Inscríbete</h2>
-            <p class="text-body-secondary">Formulario de demostración: los datos no se envían ni se guardan. Usa datos ficticios.</p>
-            <ol class="text-body-secondary">
-              <li>Completa tus datos</li>
-              <li>Elige tu categoría</li>
-              <li>Acepta las bases y envía</li>
-            </ol>
           </div>
           <div class="col-12 col-lg-8">
-            <form id="formInscripcion" class="card border-warning p-4">
-              <div class="row g-3">
-                <div class="col-12 col-lg-6">
-                  <label for="nombre" class="form-label">Nombre completo</label>
-                  <input type="text" class="form-control" id="nombre" name="nombre">
-                </div>
-                <div class="col-12 col-lg-6">
-                  <label for="correo" class="form-label">Correo institucional</label>
-                  <input type="email" class="form-control" id="correo" name="correo" placeholder="usuario@espe.edu.ec">
-                </div>
-                <div class="col-12 col-lg-6">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" name="telefono">
-                </div>
-                <div class="col-12 col-lg-6">
-                  <label for="nickname" class="form-label">Nickname</label>
-                  <input type="text" class="form-control" id="nickname" name="nickname">
-                </div>
-                <div class="col-12 col-lg-6">
-                  <label for="categoria" class="form-label">Categoría</label>
-                  <select class="form-select" id="categoria" name="categoria">
-                    <option value="">Selecciona una categoría</option>
-                    <option value="shooter">Shooter 5v5</option>
-                    <option value="peleas">Peleas 1v1</option>
-                    <option value="moba">MOBA</option>
-                    <option value="moviles">Juegos móviles</option>
-                  </select>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <label for="archivo" class="form-label">Archivo adjunto (máx. 2 MB)</label>
-                  <input type="file" class="form-control" id="archivo" name="archivo">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="terminos" name="terminos">
-                    <label class="form-check-label" for="terminos">Acepto las bases del torneo</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <!-- Las validaciones y la confirmación se agregan en el commit 3 -->
-                  <button type="button" class="btn btn-warning btn-lg fw-bold px-4">Enviar inscripción</button>
-                </div>
-              </div>
-            </form>
+            <!-- ============================================================
+                 FORMULARIO DE INSCRIPCIÓN (RF-06, RF-07, RF-08)
+                 Aquí va el formulario. Se desarrolla en una etapa posterior.
+                 ============================================================ -->
+            <div class="card border-secondary p-4 p-lg-5 text-center">
+              <p class="mb-0 text-body-secondary">Aquí va el formulario de inscripción.</p>
+            </div>
           </div>
         </div>
       </div>
