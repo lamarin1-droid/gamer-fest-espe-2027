@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +11,11 @@
 
   <!-- ENCABEZADO Y NAVEGACIÓN (RF-01) -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-warning" aria-label="Navegación principal">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#inicio">
-          <img src="https://placehold.co/40x40?text=GF" width="40" height="40" class="me-2" alt="Logotipo del Gamer Fest ESPE 2027">
-          GAMER FEST ESPE 2027
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="#inicio">
+          <img src="imagenes/logogamerfest.jpg" width="42" height="42" class="me-2 rounded" alt="Logotipo del Gamer Fest ESPE 2027">
+          GAMER FEST <span class="text-info ms-1">ESPE 2027</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
                 aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
@@ -39,21 +39,28 @@
 
     <!-- HERO: INVITACIÓN E INFORMACIÓN (RF-02) -->
     <section id="inicio" class="py-5">
-      <div class="container">
-        <div class="row align-items-center g-4">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
           <div class="col-12 col-lg-6">
-            <h1 class="display-4 fw-bold">GAMER FEST ESPE 2027</h1>
-            <p class="lead">Te invitamos al torneo universitario de videojuegos más esperado del campus.</p>
-            <p>Compite con tu equipo, conoce a la comunidad gamer y vive una jornada llena de partidas, premios y música.</p>
-            <ul class="list-unstyled">
-              <li><strong>Fecha:</strong> sábado 20 de marzo de 2027</li>
-              <li><strong>Horario:</strong> 09:00 a 18:00</li>
-              <li><strong>Lugar:</strong> ESPE, campus Belisario Quevedo</li>
-            </ul>
-            <a href="#inscripcion" class="btn btn-primary btn-lg">Inscríbete ahora</a>
+            <span class="badge text-bg-warning mb-3">Torneo universitario de videojuegos</span>
+            <h1 class="display-3 fw-bold text-uppercase">Sube de <span class="text-info">nivel</span> en el campus</h1>
+            <p class="lead">Te invitamos al GAMER FEST ESPE 2027: compite con tu equipo, juega y conoce a la comunidad gamer.</p>
+            <p class="text-body-secondary">Una jornada llena de partidas, premios y música dentro de la universidad.</p>
+            <div class="card border-warning mb-4">
+              <div class="card-body">
+                <h2 class="h6 text-warning text-uppercase">Datos del evento</h2>
+                <ul class="list-unstyled mb-0">
+                  <li><strong>Fecha:</strong> sábado 20 de marzo de 2027</li>
+                  <li><strong>Horario:</strong> 09:00 a 18:00</li>
+                  <li><strong>Lugar:</strong> ESPE, campus Belisario Quevedo</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#inscripcion" class="btn btn-warning btn-lg fw-bold px-4">Inscríbete ahora</a>
           </div>
           <div class="col-12 col-lg-6">
-            <img src="https://placehold.co/800x500?text=Gamer+Fest" class="img-fluid rounded" alt="Jugadores compitiendo en el torneo Gamer Fest ESPE 2027">
+            <!-- Falta la imagen principal: guardar una en imagenes/ y cambiar esta ruta -->
+            <img src="imagenes/logogamerfest.jpg" class="img-fluid rounded-4 border border-warning" alt="Jugadores compitiendo en el torneo Gamer Fest ESPE 2027">
           </div>
         </div>
       </div>
@@ -61,46 +68,59 @@
 
     <!-- CATEGORÍAS (RF-03) -->
     <section id="categorias" class="py-5 bg-body-tertiary">
-      <div class="container">
-        <h2 class="mb-4">Categorías</h2>
-        <div class="row g-4">
-          <div class="col-12 col-lg-3">
-            <article class="card h-100">
-              <img src="https://placehold.co/600x400?text=Shooter" class="card-img-top img-fluid" alt="Arte de la categoría Shooter 5v5">
+      <div class="container py-lg-4">
+        <h2 class="display-6 fw-bold text-uppercase">Elige tu categoría</h2>
+        <p class="text-body-secondary mb-5">Cuatro modalidades para todos los estilos de juego.</p>
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card shadow">
+              <div class="ratio ratio-4x3">
+                <img src="imagenes/shooter5v5.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría Shooter 5v5">
+              </div>
               <div class="card-body">
+                <p class="display-5 fw-bold text-warning mb-0">01</p>
                 <h3 class="h5 card-title">Shooter 5v5</h3>
-                <p class="text-body-secondary mb-2">Modalidad: por equipos</p>
+                <p class="text-info small mb-2">Modalidad: por equipos</p>
                 <p class="card-text">Partidas tácticas de cinco contra cinco en mapas clásicos.</p>
               </div>
             </article>
           </div>
-          <div class="col-12 col-lg-3">
-            <article class="card h-100">
-              <img src="https://placehold.co/600x400?text=Peleas" class="card-img-top img-fluid" alt="Arte de la categoría Peleas 1v1">
+          <div class="col-12 col-md-6 col-lg-3 mt-lg-5">
+            <article class="card shadow">
+              <div class="ratio ratio-4x3">
+                <img src="imagenes/1v1.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría Peleas 1v1">
+              </div>
               <div class="card-body">
+                <p class="display-5 fw-bold text-warning mb-0">02</p>
                 <h3 class="h5 card-title">Peleas 1v1</h3>
-                <p class="text-body-secondary mb-2">Modalidad: individual</p>
+                <p class="text-info small mb-2">Modalidad: individual</p>
                 <p class="card-text">Duelos de eliminación directa entre jugadores de juegos de pelea.</p>
               </div>
             </article>
           </div>
-          <div class="col-12 col-lg-3">
-            <article class="card h-100">
-              <img src="https://placehold.co/600x400?text=MOBA" class="card-img-top img-fluid" alt="Arte de la categoría MOBA">
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card shadow">
+              <div class="ratio ratio-4x3">
+                <img src="imagenes/moba.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría MOBA">
+              </div>
               <div class="card-body">
+                <p class="display-5 fw-bold text-warning mb-0">03</p>
                 <h3 class="h5 card-title">MOBA</h3>
-                <p class="text-body-secondary mb-2">Modalidad: por equipos</p>
+                <p class="text-info small mb-2">Modalidad: por equipos</p>
                 <p class="card-text">Batallas de estrategia en arena con equipos de cinco jugadores.</p>
               </div>
             </article>
           </div>
-          <div class="col-12 col-lg-3">
-            <article class="card h-100">
-              <img src="https://placehold.co/600x400?text=Moviles" class="card-img-top img-fluid" alt="Arte de la categoría Juegos móviles">
+          <div class="col-12 col-md-6 col-lg-3 mt-lg-5">
+            <article class="card shadow">
+              <div class="ratio ratio-4x3">
+                <img src="imagenes/movil.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Arte de la categoría Juegos móviles">
+              </div>
               <div class="card-body">
+                <p class="display-5 fw-bold text-warning mb-0">04</p>
                 <h3 class="h5 card-title">Juegos móviles</h3>
-                <p class="text-body-secondary mb-2">Modalidad: individual</p>
-                <p class="card-text">Competencia rápida en juegos para celular, con un solo jugador por inscripción.</p>
+                <p class="text-info small mb-2">Modalidad: individual</p>
+                <p class="card-text">Competencia rápida en juegos para celular, con un jugador por inscripción.</p>
               </div>
             </article>
           </div>
@@ -108,36 +128,36 @@
       </div>
     </section>
 
-    <!-- PREMIOS (RF-03) -->
+    <!-- PREMIOS (RF-03): en escritorio el orden visual es 2.º, 1.º, 3.º -->
     <section id="premios" class="py-5">
-      <div class="container">
-        <h2 class="mb-2">Premios</h2>
-        <p class="text-body-secondary mb-4">Premios propuestos con fines demostrativos.</p>
-        <div class="row g-4">
-          <div class="col-12 col-lg-4">
-            <article class="card h-100 text-center">
-              <div class="card-body">
-                <h3 class="h5">Primer lugar</h3>
-                <p class="fs-4 fw-bold">Trofeo + $100 en tarjeta de regalo</p>
+      <div class="container py-lg-4">
+        <h2 class="display-6 fw-bold text-uppercase text-center">Podio de premios</h2>
+        <p class="text-body-secondary text-center mb-5">Premios propuestos con fines demostrativos.</p>
+        <div class="row g-4 align-items-lg-end">
+          <div class="col-12 col-lg-4 order-1 order-lg-2">
+            <article class="card bg-warning text-dark border-0 shadow-lg h-100">
+              <div class="card-body text-center py-lg-5">
+                <h3 class="h5 text-uppercase">Primer lugar</h3>
+                <p class="fs-3 fw-bold">Trofeo + $100 en tarjeta de regalo</p>
                 <p class="mb-0">Condición: equipo o jugador completo y presente en la final.</p>
               </div>
             </article>
           </div>
-          <div class="col-12 col-lg-4">
-            <article class="card h-100 text-center">
-              <div class="card-body">
-                <h3 class="h5">Segundo lugar</h3>
+          <div class="col-12 col-lg-4 order-2 order-lg-1">
+            <article class="card border-info h-100">
+              <div class="card-body text-center">
+                <h3 class="h5 text-info text-uppercase">Segundo lugar</h3>
                 <p class="fs-4 fw-bold">Medalla + $50 en tarjeta de regalo</p>
-                <p class="mb-0">Condición: haber jugado todas las rondas asignadas.</p>
+                <p class="text-body-secondary mb-0">Condición: haber jugado todas las rondas asignadas.</p>
               </div>
             </article>
           </div>
-          <div class="col-12 col-lg-4">
-            <article class="card h-100 text-center">
-              <div class="card-body">
-                <h3 class="h5">Tercer lugar</h3>
+          <div class="col-12 col-lg-4 order-3">
+            <article class="card border-info h-100">
+              <div class="card-body text-center">
+                <h3 class="h5 text-info text-uppercase">Tercer lugar</h3>
                 <p class="fs-4 fw-bold">Medalla + kit de periféricos</p>
-                <p class="mb-0">Condición: respetar las bases del torneo.</p>
+                <p class="text-body-secondary mb-0">Condición: respetar las bases del torneo.</p>
               </div>
             </article>
           </div>
@@ -147,30 +167,36 @@
 
     <!-- AUSPICIANTES (RF-04) -->
     <section id="auspiciantes" class="py-5 bg-body-tertiary">
-      <div class="container">
-        <h2 class="mb-2">Auspiciantes</h2>
+      <div class="container py-lg-4">
+        <h2 class="display-6 fw-bold text-uppercase">Auspiciantes</h2>
         <p class="text-body-secondary mb-4">Marcas ficticias (simuladas), creadas solo para esta demostración.</p>
         <div class="row g-4">
           <div class="col-12 col-lg-4">
-            <article class="card h-100 text-center">
+            <article class="card border-secondary h-100 text-center">
               <div class="card-body">
-                <img src="https://placehold.co/300x150?text=PixelForge" class="img-fluid mb-3" alt="Logotipo de PixelForge, auspiciante simulado">
+                <div class="ratio ratio-16x9 mb-3">
+                  <img src="imagenes/pixelForge.jpg" class="w-100 h-100 object-fit-contain rounded" alt="Logotipo de PixelForge, auspiciante simulado">
+                </div>
                 <h3 class="h5 mb-0">PixelForge <small class="text-body-secondary">(simulado)</small></h3>
               </div>
             </article>
           </div>
           <div class="col-12 col-lg-4">
-            <article class="card h-100 text-center">
+            <article class="card border-secondary h-100 text-center">
               <div class="card-body">
-                <img src="https://placehold.co/300x150?text=NovaByte" class="img-fluid mb-3" alt="Logotipo de NovaByte, auspiciante simulado">
+                <div class="ratio ratio-16x9 mb-3">
+                  <img src="imagenes/novabyte.jpg" class="w-100 h-100 object-fit-contain rounded" alt="Logotipo de NovaByte, auspiciante simulado">
+                </div>
                 <h3 class="h5 mb-0">NovaByte <small class="text-body-secondary">(simulado)</small></h3>
               </div>
             </article>
           </div>
           <div class="col-12 col-lg-4">
-            <article class="card h-100 text-center">
+            <article class="card border-secondary h-100 text-center">
               <div class="card-body">
-                <img src="https://placehold.co/300x150?text=Arcade+Labs" class="img-fluid mb-3" alt="Logotipo de Arcade Labs, auspiciante simulado">
+                <div class="ratio ratio-16x9 mb-3">
+                  <img src="imagenes/arcadelabs.jpg" class="w-100 h-100 object-fit-contain rounded" alt="Logotipo de Arcade Labs, auspiciante simulado">
+                </div>
                 <h3 class="h5 mb-0">Arcade Labs <small class="text-body-secondary">(simulado)</small></h3>
               </div>
             </article>
@@ -181,45 +207,102 @@
 
     <!-- MAPA (RF-05, RI-03) -->
     <section id="mapa" class="py-5">
-      <div class="container">
-        <h2 class="mb-4">Ubicación</h2>
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.google.com/maps?q=ESPE+Campus+Belisario+Quevedo+Latacunga&output=embed"
-                  title="Mapa del campus Belisario Quevedo de la ESPE" loading="lazy" allowfullscreen></iframe>
+      <div class="container py-lg-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-8">
+            <div class="ratio ratio-16x9 border border-warning rounded-3 overflow-hidden">
+              <iframe src="https://www.google.com/maps?q=ESPE+Campus+Belisario+Quevedo+Latacunga&output=embed"
+                      title="Mapa del campus Belisario Quevedo de la ESPE" loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h2 class="display-6 fw-bold text-uppercase">Cómo llegar</h2>
+            <p>El evento se realizará en la Universidad de las Fuerzas Armadas ESPE, campus Belisario Quevedo.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=ESPE+Campus+Belisario+Quevedo+Latacunga"
+               class="link-info" target="_blank" rel="noopener">Abrir el mapa en una pestaña nueva</a>
+          </div>
         </div>
-        <p class="mt-3 mb-1">El evento se realizará en la Universidad de las Fuerzas Armadas ESPE, campus Belisario Quevedo.</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=ESPE+Campus+Belisario+Quevedo+Latacunga"
-           target="_blank" rel="noopener">Abrir el mapa en una pestaña nueva</a>
       </div>
     </section>
 
-    <!-- FORMULARIO DE INSCRIPCIÓN (RF-06, RF-07, RF-08) -->
+    <!-- FORMULARIO DE INSCRIPCIÓN (RF-06) -->
     <section id="inscripcion" class="py-5 bg-body-tertiary">
-      <div class="container">
-        <h2 class="mb-4">Inscripción</h2>
-
-        <!-- ESPACIO PARA EL FORMULARIO: se completa en el examen -->
-        <div id="contenedor-formulario">
-
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-12 col-lg-4">
+            <span class="badge text-bg-warning mb-3">Último paso</span>
+            <h2 class="display-6 fw-bold text-uppercase">Inscríbete</h2>
+            <p class="text-body-secondary">Formulario de demostración: los datos no se envían ni se guardan. Usa datos ficticios.</p>
+            <ol class="text-body-secondary">
+              <li>Completa tus datos</li>
+              <li>Elige tu categoría</li>
+              <li>Acepta las bases y envía</li>
+            </ol>
+          </div>
+          <div class="col-12 col-lg-8">
+            <form id="formInscripcion" class="card border-warning p-4">
+              <div class="row g-3">
+                <div class="col-12 col-lg-6">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <label for="correo" class="form-label">Correo institucional</label>
+                  <input type="email" class="form-control" id="correo" name="correo" placeholder="usuario@espe.edu.ec">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <label for="nickname" class="form-label">Nickname</label>
+                  <input type="text" class="form-control" id="nickname" name="nickname">
+                </div>
+                <div class="col-12 col-lg-6">
+                  <label for="categoria" class="form-label">Categoría</label>
+                  <select class="form-select" id="categoria" name="categoria">
+                    <option value="">Selecciona una categoría</option>
+                    <option value="shooter">Shooter 5v5</option>
+                    <option value="peleas">Peleas 1v1</option>
+                    <option value="moba">MOBA</option>
+                    <option value="moviles">Juegos móviles</option>
+                  </select>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <label for="archivo" class="form-label">Archivo adjunto (máx. 2 MB)</label>
+                  <input type="file" class="form-control" id="archivo" name="archivo">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terminos" name="terminos">
+                    <label class="form-check-label" for="terminos">Acepto las bases del torneo</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <!-- Las validaciones y la confirmación se agregan en el commit 3 -->
+                  <button type="button" class="btn btn-warning btn-lg fw-bold px-4">Enviar inscripción</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-
       </div>
     </section>
 
   </main>
 
   <!-- PIE DE PÁGINA (RF-09) -->
-  <footer class="bg-dark text-light py-4">
+  <footer class="bg-body-tertiary border-top border-warning py-4">
     <div class="container">
       <div class="row align-items-center text-center text-lg-start g-3">
         <div class="col-12 col-lg-6">
           <p class="fw-bold mb-0">GAMER FEST ESPE 2027</p>
-          <small>Evento hipotético con fines académicos. Enlaces de redes demostrativos.</small>
+          <small class="text-body-secondary">Evento hipotético con fines académicos. Enlaces de redes demostrativos.</small>
         </div>
         <div class="col-12 col-lg-6 text-lg-end">
-          <a href="#" class="link-light me-3">Instagram</a>
-          <a href="#" class="link-light me-3">Facebook</a>
-          <a href="#" class="link-light">TikTok</a>
+          <a href="#" class="link-warning me-3">Instagram</a>
+          <a href="#" class="link-warning me-3">Facebook</a>
+          <a href="#" class="link-warning">TikTok</a>
         </div>
       </div>
     </div>
